@@ -27,6 +27,11 @@ class Cat:
     def make_sound(self):
         print("Meow")
 
+class ColorCat(Cat):
+    def __init__(selfself, color):
+        self.color = black
+        
+
 
 class Dog:
     def __init__(self, name, age):
