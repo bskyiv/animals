@@ -30,6 +30,9 @@ class Cat:
 class ColorCat(Cat):
     def __init__(selfself, color):
         self.color = black
+
+    def make_sound(self):
+        print("WowWow")
         
 
 
