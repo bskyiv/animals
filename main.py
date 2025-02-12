@@ -28,14 +28,16 @@ class Cat:
         print("Meow")
 
 class ColorCat(Cat):
-    def __init__(self, color):
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
         self.color = color
-#       self.name = "Colorname"
-#       self.age = 5
 
+
+    def info(self):
+        print(f"I am a colorcat. My name is {self.name}.  I am {self.age} years old. My color is {self.color}.")
 
     def make_sound(self):
-        print("WowWow")
+        print("Wow")
         
 
 
@@ -52,9 +54,7 @@ class Dog:
 
 
 cat1 = Cat("Kitty", 2.5)
-cat2 = ColorCat("red")
-cat2.name = "Marsik"
-print(f"I am a cat2. My name is {cat2.name}")
+cat2 = ColorCat("Marsik",8,"red")
 
 
 dog1 = Dog("Fluffy", 4)
