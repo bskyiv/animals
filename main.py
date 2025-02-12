@@ -28,8 +28,11 @@ class Cat:
         print("Meow")
 
 class ColorCat(Cat):
-    def __init__(selfself, color):
-        self.color = black
+    def __init__(self, color):
+        self.color = color
+        self.name = "Colorname"
+        self.age = 5
+
 
     def make_sound(self):
         print("WowWow")
@@ -49,9 +52,12 @@ class Dog:
 
 
 cat1 = Cat("Kitty", 2.5)
+cat2 = ColorCat("red")
+
+
 dog1 = Dog("Fluffy", 4)
 
-for animal in (cat1, dog1):
+for animal in (cat1, cat2, dog1):
     animal.make_sound()
     animal.info()
     animal.make_sound()
