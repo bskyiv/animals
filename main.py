@@ -30,8 +30,8 @@ class Cat:
 class ColorCat(Cat):
     def __init__(self, color):
         self.color = color
-        self.name = "Colorname"
-        self.age = 5
+#       self.name = "Colorname"
+#       self.age = 5
 
 
     def make_sound(self):
@@ -53,6 +53,8 @@ class Dog:
 
 cat1 = Cat("Kitty", 2.5)
 cat2 = ColorCat("red")
+cat2.name = "Marsik"
+print(f"I am a cat2. My name is {cat2.name}")
 
 
 dog1 = Dog("Fluffy", 4)
